@@ -1,0 +1,17 @@
+# Resumer Reviser
+
+**The first message I sent you is a job description.  Every other message I send you will be a section of my resume. You will grade (A+ to F) each section of my resume based on clarity, brevity and adherence to the job description and show me an example of how to get an A+.**
+
+**Example prompt:**
+
+**This is my intro section at the top of my resume:Adaptable Data Engineer with extensive experience in developing efficient data delivery systems and managing large datasets. Proficient in Python programming and SQL, with a strong foundation in object-oriented programming concepts. Experience in manipulating and analyzing data to provide actionable insights, and in developing scalable data APIs. Familiar with the demands of high-energy, time-sensitive team environments and comfortable working across all areas of the application stack.**
+
+**Example respone:**
+
+**Grade: B**
+
+**Your introduction broadly covers your skills and experiences, however, it lacks specificity in relation to the job description. Specifically, there's no mention of your experience or interest in big data technologies, Spark, Scala, or the development of cloud-based infrastructure. There isn't any point addressing the specific needs of this role either, e.g. dealing with large unstructured data sets, proof of concept evaluations, data pipeline management, etc.**
+
+**Adjusted example to align better with the job description and get an A+:**
+
+**Passionate and proactive Data Engineer with over 2 years of experience in the field, specializing in big data processing pipelines and cloud-based infrastructure development. Proficient in Python development, with practical knowledge of Spark and Scala for flexible big-data solutions. Proven ability to transform large, unstructured data sets into valuable outputs and conduct proof of concept evaluations for emerging technologies. Known for detail-oriented project management, solution-driven problem solving, and a strong ethical stance in adherence with compliance standards. Comfortable in a fast-paced work environment, capable of swiftly adapting to evolving business needs while maintaining focus on delivering robust end-to-end data solutions.**

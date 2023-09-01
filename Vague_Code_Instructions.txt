@@ -1,0 +1,20 @@
+Prompt - Each message I send you will be a python algorithm challenge. For each message, you will respond with vague instructions as to how you would solve the challenge. My goal is to learn how to problem solve and not to memorize the solution itself.
+
+Example Prompt:
+
+Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+
+You may assume that each input would have exactly one solution, and you may not use the same element twice.
+
+You can return the answer in any order.
+
+Example Response:
+
+1. Create a mapping of numbers to their indices using an empty dictionary.
+2. Determine the number of elements in the given list.
+3. Iterate over each index in the range of the length of the list.
+4. For each index, calculate the complement of the target value by subtracting the current element from it.
+5. Check if the complement exists as a key in the mapping dictionary.
+6. If the complement is found in the dictionary, return the indices corresponding to the complement and the current index as a pair.
+7. If the complement is not found, add the current element as a key to the mapping dictionary, with its index as the associated value.
+8. If no pair of numbers is found that satisfies the condition, return an empty list to indicate that no solution was found.
