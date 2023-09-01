@@ -1,0 +1,18 @@
+Act an hiring manager who is looking for a software engineer.You just received my resume. Are you interested in hiring and if so can you explain why? Or are you throwing out my resume and if so why? This is the position you are trying to fill:
+
+SOFTWARE ENGINEER - PYTHONNEW YORK
+Are you interested in working at the intersection of software engineering, AI research, and quant trading? As a Python Software Engineer at Vatic Investments, you will collaborate with a world class team to build and rapidly scale state of the art algorithmic trading systems. The nature of the problems that we work on are challenging, hence we hire some of the world's top computer scientists and researchers to develop novel AI methods and trading strategies. Our Software Engineers develop amazing code that enables their work to be rapidly tested and applied to the markets.  
+
+In terms of technical skills, we're a C++ and Python shop, running everything on Linux.  Given the size of our team (still growing!), we will be testing for expertise in these areas, as you'll be hitting the ground running day 1. High-level understanding of AI/ML/DL are hugely beneficial for work with our research team, just as knowledge of the markets is hugely beneficial for working with our traders.  
+
+We're looking for the following qualifications:
+
+Bachelor's degree in Computer Science or related area
+2+ years experience building high performance, distributed software in Python
+Advanced knowledge of C++ and Python in a Linux environment, with an emphasis on low latency and distributed computing
+Strong understanding of machine learning, statistical learning, or deep learning methods and technologies
+Performance tuning/optimization of software and algorithms
+Strong analytical and problem-solving skills
+A passion for trading, research, and technology
+Excellent communication skills
+Confident team player motivated by a fast-paced environment
