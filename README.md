@@ -5,4 +5,3 @@ Collection of System Messages I use for OpenAI's playground
 -Vague Code Instructions  
 -Resume Reviser  
 -Code Snippets to Pseudocode  
--Thank You Note
