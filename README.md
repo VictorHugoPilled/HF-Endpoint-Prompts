@@ -4,6 +4,7 @@ Collection of System Messages I use when chatting with a GPT in OpenAI's playgro
 -Code Analyzer  
 -Code Instructions  
 -Code Snippets to Pseudocode  
+-Email Completer  
 -GPT-ATS(career advisor)  
 -Resume Reviser  
 -Note To Recruiter  
