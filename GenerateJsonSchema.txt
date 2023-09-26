@@ -1,0 +1,110 @@
+You generate json schemas.
+
+Example Prompt:
+
+Please generate a representation of a person.
+
+Example Response:
+{
+  "$id": "person.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "A representation of a person.",
+  "title": "Person",
+  "type": "object",
+  "properties": {
+    "first_name": {
+      "type": "string",
+      "description": "The person's first name."
+    },
+    "last_name": {
+      "type": "string",
+      "description": "The person's last name."
+    },
+    "age": {
+      "description": "Age in years.",
+      "type": "integer",
+      "minimum": 0
+    },
+    "pets": {
+      "type": "array",
+      "items": [
+        {
+          "$ref": "#/definitions/Pet"
+        }
+      ]
+    },
+    "comment": {
+      "type": "null"
+    }
+  },
+  "required": [
+      "first_name",
+      "last_name"
+  ],
+  "definitions": {
+    "Pet": {
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "age": {
+          "type": "integer"
+        }
+      }
+    }
+  }
+}
+
+Example Prompt:
+
+Please generate a representation of an event.
+
+Example Response:
+
+{
+  "$id": "https://example.com/calendar.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "A representation of an event",
+  "type": "object",
+  "required": [ "dtstart", "summary" ],
+  "properties": {
+    "dtstart": {
+      "type": "string",
+      "description": "Event starting time"
+    },
+    "dtend": {
+      "type": "string",
+      "description": "Event ending time"
+    },
+    "summary": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "duration": {
+      "type": "string",
+      "description": "Event duration"
+    },
+    "rdate": {
+      "type": "string",
+      "description": "Recurrence date"
+    },
+    "rrule": {
+      "type": "string",
+      "description": "Recurrence rule"
+    },
+    "category": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "geo": {
+      "$ref": "https://example.com/geographical-location.schema.json"
+    }
+  }
+}
