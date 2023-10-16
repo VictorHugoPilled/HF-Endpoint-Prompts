@@ -1,17 +1,22 @@
-# Resumer Reviser
-
-**The first message I sent you is a job description.  Every other message I send you will be a section of my resume. You will grade (A+ to F) each section of my resume based on clarity, brevity and adherence to the job description and show me an example of how to get an A+.**
-
-**Example prompt:**
-
-**This is my intro section at the top of my resume:Adaptable Data Engineer with extensive experience in developing efficient data delivery systems and managing large datasets. Proficient in Python programming and SQL, with a strong foundation in object-oriented programming concepts. Experience in manipulating and analyzing data to provide actionable insights, and in developing scalable data APIs. Familiar with the demands of high-energy, time-sensitive team environments and comfortable working across all areas of the application stack.**
-
-**Example respone:**
-
-**Grade: B**
-
-**Your introduction broadly covers your skills and experiences, however, it lacks specificity in relation to the job description. Specifically, there's no mention of your experience or interest in big data technologies, Spark, Scala, or the development of cloud-based infrastructure. There isn't any point addressing the specific needs of this role either, e.g. dealing with large unstructured data sets, proof of concept evaluations, data pipeline management, etc.**
-
-**Adjusted example to align better with the job description and get an A+:**
-
-**Passionate and proactive Data Engineer with over 2 years of experience in the field, specializing in big data processing pipelines and cloud-based infrastructure development. Proficient in Python development, with practical knowledge of Spark and Scala for flexible big-data solutions. Proven ability to transform large, unstructured data sets into valuable outputs and conduct proof of concept evaluations for emerging technologies. Known for detail-oriented project management, solution-driven problem solving, and a strong ethical stance in adherence with compliance standards. Comfortable in a fast-paced work environment, capable of swiftly adapting to evolving business needs while maintaining focus on delivering robust end-to-end data solutions.**
+{
+  "model": "gpt-4",
+  "messages": [
+    {
+      "role": "system",
+      "content": "The first message I sent you is a job description.  Every other message I send you will be a section of my resume. You will grade (A+ to F) each section of my resume based on clarity, brevity and adherence to the job description and show me an example of how to get an A+. \n\nExample prompt:\n\nThis is my intro section at the top of my resume:Adaptable Data Engineer with extensive experience in developing efficient data delivery systems and managing large datasets. Proficient in Python programming and SQL, with a strong foundation in object-oriented programming concepts. Experience in manipulating and analyzing data to provide actionable insights, and in developing scalable data APIs. Familiar with the demands of high-energy, time-sensitive team environments and comfortable working across all areas of the application stack. \n\nExample respone:\n\nGrade: B\n\nYour introduction broadly covers your skills and experiences, however, it lacks specificity in relation to the job description. Specifically, there's no mention of your experience or interest in big data technologies, Spark, Scala, or the development of cloud-based infrastructure. There isn't any point addressing the specific needs of this role either, e.g. dealing with large unstructured data sets, proof of concept evaluations, data pipeline management, etc. \n\nAdjusted example to align better with the job description and get an A+:\n\nPassionate and proactive Data Engineer with over 2 years of experience in the field, specializing in big data processing pipelines and cloud-based infrastructure development. Proficient in Python development, with practical knowledge of Spark and Scala for flexible big-data solutions. Proven ability to transform large, unstructured data sets into valuable outputs and conduct proof of concept evaluations for emerging technologies. Known for detail-oriented project management, solution-driven problem solving, and a strong ethical stance in adherence with compliance standards. Comfortable in a fast-paced work environment, capable of swiftly adapting to evolving business needs while maintaining focus on delivering robust end-to-end data solutions.\n"
+    },
+    {
+      "role": "user",
+      "content": "WorldQuant develops and deploys systematic financial strategies across a broad range of asset classes and global markets. We seek to produce high-quality predictive signals (alphas) through our proprietary research platform to employ financial strategies focused on market inefficiencies. Our teams work collaboratively to drive the production of alphas and financial strategies – the foundation of a balanced, global investment platform.\n\nWorldQuant is built on a culture that pairs academic sensibility with accountability for results. Employees are encouraged to think openly about problems, balancing intellectualism and practicality. Excellent ideas come from anyone, anywhere. Employees are encouraged to challenge conventional thinking and possess an attitude of continuous improvement.\n\nOur goal is to hire the best and the brightest. We value intellectual horsepower first and foremost, and people who demonstrate an outstanding talent. There is no roadmap to future success, so we need people who can help us build it.\n\nThe Role: We are seeking a highly-qualified Trading Systems Engineer to work in our Front Office Technology group. This team is responsible for building both the large-scale quantitative-research platforms that drive WorldQuant’s operations and for building the global execution systems that execute WorldQuant’s strategies in global financial markets. We are looking for someone who will be responsible for developing, extending, monitoring, configuring, and troubleshooting a complex and distributed platform. Responsibilities (include, but not limited to the following):\n\nProvide support for the real-time global execution system. Manage and improve operational infrastructure\nTroubleshoot critical production issues, identifying and patching bugs and inefficiencies\nHandle configuration, testing, installation, monitoring of applications and back end processes of a complex platform\nHandle numerous requests sent by users, follow-up with users, and work with other groups on resolving issues\nAnalyze and optimize latencies\nParticipate in all facets of a project’s life cycle from design, implementation, testing, documentation and deployment, with a focus on deployment and production support\nCoordinate with other technology groups around releases and upgrades\nInteract with developers, quants, portfolio managers, and remote support staff\n \n\nWhat You’ll Bring:\n\nDegree in engineering or related field\nExperience with DevOps lifecycle\nStrong ability to understand source control systems and how they work\nExperience with Continuous Integration and Continuous Deployment (Experience with Gitlab CI is a plus)\nAdvanced working SQL knowledge and experience working with relational databases\nExperience with Python scripting and debugging C++ code\nExperience with change management in a regulated / critical environment such as finance"
+    },
+    {
+      "role": "user",
+      "content": "This is my intro section at the top of my resume:"
+    }
+  ],
+  "temperature": 1,
+  "max_tokens": 256,
+  "top_p": 1,
+  "frequency_penalty": 0,
+  "presence_penalty": 0
+}
