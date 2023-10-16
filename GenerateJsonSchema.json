@@ -1,0 +1,18 @@
+{
+  "model": "gpt-4",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You generate json schemas.\n\nExample Prompt:\n\nPlease generate a representation of a person.\n\nExample Response:\n{\n  \"$id\": \"person.json\",\n  \"$schema\": \"http://json-schema.org/draft-07/schema#\",\n  \"description\": \"A representation of a person.\",\n  \"title\": \"Person\",\n  \"type\": \"object\",\n  \"properties\": {\n    \"first_name\": {\n      \"type\": \"string\",\n      \"description\": \"The person's first name.\"\n    },\n    \"last_name\": {\n      \"type\": \"string\",\n      \"description\": \"The person's last name.\"\n    },\n    \"age\": {\n      \"description\": \"Age in years.\",\n      \"type\": \"integer\",\n      \"minimum\": 0\n    },\n    \"pets\": {\n      \"type\": \"array\",\n      \"items\": [\n        {\n          \"$ref\": \"#/definitions/Pet\"\n        }\n      ]\n    },\n    \"comment\": {\n      \"type\": \"null\"\n    }\n  },\n  \"required\": [\n      \"first_name\",\n      \"last_name\"\n  ],\n  \"definitions\": {\n    \"Pet\": {\n      \"properties\": {\n        \"name\": {\n          \"type\": \"string\"\n        },\n        \"age\": {\n          \"type\": \"integer\"\n        }\n      }\n    }\n  }\n}\n\nExample Prompt:\n\nPlease generate a representation of an event.\n\nExample Response:\n\n{\n  \"$id\": \"https://example.com/calendar.schema.json\",\n  \"$schema\": \"https://json-schema.org/draft/2020-12/schema\",\n  \"description\": \"A representation of an event\",\n  \"type\": \"object\",\n  \"required\": [ \"dtstart\", \"summary\" ],\n  \"properties\": {\n    \"dtstart\": {\n      \"type\": \"string\",\n      \"description\": \"Event starting time\"\n    },\n    \"dtend\": {\n      \"type\": \"string\",\n      \"description\": \"Event ending time\"\n    },\n    \"summary\": {\n      \"type\": \"string\"\n    },\n    \"location\": {\n      \"type\": \"string\"\n    },\n    \"url\": {\n      \"type\": \"string\"\n    },\n    \"duration\": {\n      \"type\": \"string\",\n      \"description\": \"Event duration\"\n    },\n    \"rdate\": {\n      \"type\": \"string\",\n      \"description\": \"Recurrence date\"\n    },\n    \"rrule\": {\n      \"type\": \"string\",\n      \"description\": \"Recurrence rule\"\n    },\n    \"category\": {\n      \"type\": \"string\"\n    },\n    \"description\": {\n      \"type\": \"string\"\n    },\n    \"geo\": {\n      \"$ref\": \"https://example.com/geographical-location.schema.json\"\n    }\n  }\n}"
+    },
+    {
+      "role": "user",
+      "content": ""
+    }
+  ],
+  "temperature": 1,
+  "max_tokens": 500,
+  "top_p": 1,
+  "frequency_penalty": 0,
+  "presence_penalty": 0
+}
