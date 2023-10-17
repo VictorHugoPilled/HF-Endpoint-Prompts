@@ -1,5 +1,3 @@
-# OpenAI-System-Messages
-Collection of System Messages I use when chatting with a GPT in OpenAI's playground  
 -Affirmations Positives  
 -Code Analyzer  
 -Code Instructions  
