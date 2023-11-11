@@ -4,9 +4,9 @@
   uses: fjogeleit/http-request-action@v1.14.1
   with:
     # Request URL
-    url: 
+    url: https://api-inference.huggingface.co/models
     # Request Method
-    method: # optional, default is POST
+    method: POST
     # Content Type
     contentType: # optional
     # Request Body as JSON String
@@ -20,7 +20,7 @@
     # Auth Password
     password: # optional
     # Request Timeout in Sec
-    timeout: # optional, default is 5000
+    timeout: 5000
     # Bearer Authentication Token
     bearerToken: # optional
     # Custom HTTP Headers
