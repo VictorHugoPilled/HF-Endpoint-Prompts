@@ -1,3 +1,3 @@
-Prompts are jsons and are ready to be sent to HuggingFace's endpoints. Model settings used are included.
+Prompts are jsons and can be pushed to HuggingFace's endpoints using Github Actions. Model settings used are included.
 
 
