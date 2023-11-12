@@ -1,11 +1,13 @@
 name: PromptEndpoints
 jobs:
   getprompt:
-    uses: notiz-dev/github-action-json-property@release
+    name: Get JSON Property
+    uses: notiz-dev/github-action-json-property@v0.2.0
     with: 
         path: 'fewshotprompts/respondtoappquestions.json'
         prop_path: 'messages'
   sendtoHF:
+    name: HTTP Request Action
     uses: fjogeleit/http-request-action@v1.14.1
     with:
       # Request URL
