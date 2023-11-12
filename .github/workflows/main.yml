@@ -1,35 +1,33 @@
-- name: Prompt HF Endpoints
-  # You may pin to the exact commit or the version.
-  # uses: fjogeleit/http-request-action@eab8015483ccea148feff7b1c65f320805ddc2bf
-  uses: fjogeleit/http-request-action@v1.14.1
-  with:
-    # Request URL
-    url: https://api-inference.huggingface.co/models/HuggingFaceH4/zephyr-7b-beta
-    # Request Method
-    method: POST
-    # Content Type
-    contentType: application/json
-    # Request Body as JSON String
-    data: '{"inputs": "Can you please let us know more details about your "}'
-    # Map of absolute file paths as JSON String
-    files: # optional, default is {}
-    # A single absolute file path
-    file: # optional
-    # Auth Username
-    timeout: 5000
-    # Bearer Authentication Token
-    bearerToken: HF_API
-    # Prevent this Action to fail if the request respond without an response
-    preventFailureOnNoResponse: # optional
-    # Prevent this Action to fail if the request respond with one of the configured StatusCodes
-    ignoreStatusCodes: # optional
-    # Escape newlines in data string content
-    escapeData: # optional
-    # Certificate authority as string in PEM format
-    httpsCA: # optional
-    # Persist the response data to the specified file path
-    responseFile: # optional
-    # optional amount of retries if the request fails
-    retry: # optional
-    # wait time between retries in milliseconds
-    retryWait: # optional
+name: PromptEndpoints
+jobs:
+  getprompt:
+    uses: notiz-dev/github-action-json-property@release
+    with: 
+        path: 'fewshotprompts/respondtoappquestions.json'
+        prop_path: 'messages'
+  sendtoHF:
+    uses: fjogeleit/http-request-action@v1.14.1
+    with:
+      # Request URL
+      url: https://api-inference.huggingface.co/models/HuggingFaceH4/zephyr-7b-beta
+      # Request Method
+      method: POST
+      # Content Type
+      contentType: application/json
+      # Request Body as JSON String
+      data: ${{ prop_path }}
+      timeout: 5000
+      # Bearer Authentication Token
+      bearerToken: ${{ secrets.HF_API }}
+      # Prevent this Action to fail if the request respond without an response
+      preventFailureOnNoResponse: # optional
+      # Prevent this Action to fail if the request respond with one of the configured StatusCodes
+      ignoreStatusCodes: # optional
+      # Certificate authority as string in PEM format
+      httpsCA: # optional
+      # Persist the response data to the specified file path
+      responseFile: log/responses.txt
+      # optional amount of retries if the request fails
+      retry: # optional
+      # wait time between retries in milliseconds
+      retryWait: # optional
